@@ -5,876 +5,496 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sumit Bansal — Automation &amp; Solutions Engineer</title>
   <meta name="description" content="Sumit Bansal is an Automation & Solutions Engineer with 12+ years of experience across API integrations, workflow automation, AI chatbots, CRM systems, and e-commerce operations." />
-  <meta name="keywords" content="Automation Engineer, API Integration, n8n, Workato, Zapier, Zoho CRM, AI Chatbot, Workflow Automation, Sumit Bansal" />
   <meta name="author" content="Sumit Bansal" />
-
-  <!-- Open Graph -->
   <meta property="og:title" content="Sumit Bansal — Automation & Solutions Engineer" />
-  <meta property="og:description" content="12+ years building automation systems, API integrations, AI-driven workflows, and e-commerce operations across enterprise and startup environments." />
+  <meta property="og:description" content="12+ years building automation systems, API integrations, AI-driven workflows, and e-commerce operations." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://sumitbansal96.github.io" />
-  <meta property="og:image" content="https://sumitbansal96.github.io/assets/img/og-cover.png" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Sumit Bansal — Automation & Solutions Engineer" />
-  <meta name="twitter:description" content="12+ years building automation systems, API integrations, AI chatbots, and e-commerce workflows." />
-
-  <!-- Canonical -->
   <link rel="canonical" href="https://sumitbansal96.github.io" />
 
-  <!-- Fonts: Cabinet Grotesk (display) + Satoshi (body) from Fontshare -->
-  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@300,400,500,700,800&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet" />
-
-  <!-- JetBrains Mono for code elements -->
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="assets/css/style.css" />
 
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Sumit Bansal",
-    "jobTitle": "Automation & Solutions Engineer",
-    "email": "sumit.mft@gmail.com",
-    "telephone": "+91-7838622745",
-    "url": "https://sumitbansal96.github.io",
-    "sameAs": [
-      "https://github.com/Sumitbansal96",
-      "https://linkedin.com/in/imsumitbansal"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Noida",
-      "addressCountry": "IN"
-    }
-  }
-  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Sumit Bansal","jobTitle":"Automation & Solutions Engineer","email":"sumit.mft@gmail.com","url":"https://sumitbansal96.github.io","sameAs":["https://github.com/Sumitbansal96","https://linkedin.com/in/imsumitbansal"]}</script>
 </head>
 <body>
 
-  <!-- ═══════════════════════════════════════════
-       NAVIGATION
-  ═══════════════════════════════════════════ -->
-  <header class="site-header" id="site-header" role="banner">
-    <nav class="nav-container" aria-label="Primary navigation">
-      <a href="#hero" class="nav-logo" aria-label="Sumit Bansal — Home">
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false">
-          <rect width="32" height="32" rx="6" fill="currentColor" opacity="0.08"/>
-          <path d="M8 22 L8 10 L14 10 Q18 10 18 14 Q18 16.5 15.5 17.5 L19 22 L16 22 L13 18 L11 18 L11 22 Z M11 15.5 L13.5 15.5 Q15.5 15.5 15.5 14 Q15.5 12.5 13.5 12.5 L11 12.5 Z" fill="currentColor"/>
-          <path d="M20 10 L24 10 L24 12.5 L20 12.5 Z M20 14.5 L24 14.5 L24 17 L20 17 Z M20 19.5 L24 19.5 L24 22 L20 22 Z" fill="var(--color-accent)"/>
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" aria-label="Home">
+      <span class="logo-mark">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+          <rect x="1" y="1" width="20" height="20" rx="4" stroke="var(--accent)" stroke-width="1.5"/>
+          <path d="M6 16V6l5 5 5-5v10" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
-        <span class="nav-logo-text">SB</span>
-      </a>
+      </span>
+      <span class="logo-text">SB</span>
+    </a>
 
-      <ul class="nav-links" role="list">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#skills" class="nav-link">Stack</a></li>
-        <li><a href="#contact" class="nav-link nav-link--cta">Connect</a></li>
-      </ul>
-
-      <div class="nav-controls">
-        <button class="theme-toggle" data-theme-toggle aria-label="Switch to light mode" title="Toggle theme">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-          </svg>
-        </button>
-        <button class="nav-mobile-toggle" id="mobileMenuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about" class="nl">About</a>
+      <a href="#experience" class="nl">Work</a>
+      <a href="#projects" class="nl">Projects</a>
+      <a href="#skills" class="nl">Stack</a>
     </nav>
-    <div class="scroll-progress-bar" id="scrollProgressBar" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-  </header>
 
-  <!-- Mobile Menu -->
-  <div class="mobile-menu" id="mobileMenu" aria-hidden="true" role="dialog" aria-label="Mobile navigation">
-    <ul role="list">
-      <li><a href="#about" class="mobile-nav-link">About</a></li>
-      <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
-      <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
-      <li><a href="#skills" class="mobile-nav-link">Stack</a></li>
-      <li><a href="#contact" class="mobile-nav-link">Connect</a></li>
-    </ul>
+    <div class="nav-end">
+      <button class="theme-btn" data-theme-toggle aria-label="Toggle theme">
+        <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      </button>
+      <a href="#contact" class="nav-cta">Connect</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
   </div>
-  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <div class="nav-progress" id="navProgress"></div>
+</header>
 
-  <main id="main-content">
+<!-- Mobile drawer -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <a href="#about" class="dl">About</a>
+  <a href="#experience" class="dl">Work</a>
+  <a href="#projects" class="dl">Projects</a>
+  <a href="#skills" class="dl">Stack</a>
+  <a href="#contact" class="dl dl--cta">Connect →</a>
+</div>
+<div class="drawer-bg" id="drawerBg"></div>
 
-    <!-- ═══════════════════════════════════════════
-         HERO
-    ═══════════════════════════════════════════ -->
-    <section class="hero" id="hero" aria-label="Introduction">
-      <div class="hero-grid-canvas" aria-hidden="true" id="heroCanvas"></div>
-      <div class="hero-flow-lines" aria-hidden="true" id="heroFlowLines"></div>
+<main>
 
-      <div class="hero-content">
-        <div class="hero-badge reveal-fade">
-          <span class="hero-badge-dot"></span>
-          Available for new opportunities
-        </div>
+<!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
 
-        <h1 class="hero-name reveal-up">
-          <span class="hero-name-first">Sumit</span>
-          <span class="hero-name-last">Bansal</span>
-        </h1>
+  <div class="hero-content">
+    <div class="hero-tag js-reveal">
+      <span class="tag-dot"></span>
+      <span class="tag-text" id="tagText">Automation &amp; Solutions Engineer</span>
+    </div>
 
-        <div class="hero-title reveal-up" style="--delay: 0.1s">
-          <span class="hero-title-primary">Automation &amp; Solutions Engineer</span>
-        </div>
+    <h1 class="hero-name js-reveal" style="--d:0.05s">
+      <span class="name-line" data-text="Sumit Bansal">Sumit Bansal</span>
+    </h1>
 
-        <p class="hero-descriptor reveal-up" style="--delay: 0.2s">
-          12+ years engineering automation systems, API integrations,<br class="hero-br"/> AI-driven workflows, and e-commerce operations.
-        </p>
+    <p class="hero-sub js-reveal" style="--d:0.1s">
+      12+ years building systems that connect, automate, and scale —<br>
+      API integrations, AI workflows, e-commerce operations.
+    </p>
 
-        <div class="hero-stat-row reveal-up" style="--delay: 0.3s" aria-label="Key metrics">
-          <div class="hero-stat">
-            <div class="hero-stat-number">
-              <span class="hero-stat-value" data-count="12">0</span><span class="hero-stat-suffix">+</span>
-            </div>
-            <span class="hero-stat-label">Years</span>
-          </div>
-          <div class="hero-stat-divider" aria-hidden="true"></div>
-          <div class="hero-stat">
-            <div class="hero-stat-number">
-              <span class="hero-stat-value" data-count="5">0</span>
-            </div>
-            <span class="hero-stat-label">Projects</span>
-          </div>
-          <div class="hero-stat-divider" aria-hidden="true"></div>
-          <div class="hero-stat">
-            <div class="hero-stat-number">
-              <span class="hero-stat-value" data-count="15">0</span><span class="hero-stat-suffix">+</span>
-            </div>
-            <span class="hero-stat-label">Platforms</span>
-          </div>
-        </div>
-
-        <div class="hero-actions reveal-up" style="--delay: 0.4s">
-          <a href="#projects" class="btn btn--primary">View Projects</a>
-          <a href="#contact" class="btn btn--ghost">Get in Touch</a>
-        </div>
-
-        <div class="hero-scroll-cue reveal-fade" style="--delay: 0.8s" aria-hidden="true">
-          <span>scroll</span>
-          <div class="scroll-line"></div>
-        </div>
+    <div class="hero-stats js-reveal" style="--d:0.15s">
+      <div class="hs">
+        <span class="hs-n" data-count="12">0</span><span class="hs-sym">+</span>
+        <span class="hs-l">Years</span>
       </div>
-
-      <div class="hero-platform-orbit" aria-hidden="true">
-        <div class="orbit-ring orbit-ring--outer">
-          <div class="orbit-node" style="--angle: 0deg"><span>n8n</span></div>
-          <div class="orbit-node" style="--angle: 51deg"><span>Zapier</span></div>
-          <div class="orbit-node" style="--angle: 102deg"><span>Workato</span></div>
-          <div class="orbit-node" style="--angle: 153deg"><span>Bubble.io</span></div>
-          <div class="orbit-node" style="--angle: 204deg"><span>Zoho</span></div>
-          <div class="orbit-node" style="--angle: 255deg"><span>Postman</span></div>
-          <div class="orbit-node" style="--angle: 306deg"><span>AWS</span></div>
-        </div>
-        <div class="orbit-ring orbit-ring--inner">
-          <div class="orbit-node orbit-node--inner" style="--angle: 25deg"><span>Python</span></div>
-          <div class="orbit-node orbit-node--inner" style="--angle: 115deg"><span>JS</span></div>
-          <div class="orbit-node orbit-node--inner" style="--angle: 205deg"><span>SQL</span></div>
-          <div class="orbit-node orbit-node--inner" style="--angle: 295deg"><span>GAS</span></div>
-        </div>
-        <div class="orbit-core">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-            <circle cx="20" cy="20" r="18" stroke="var(--color-accent)" stroke-width="1.5" opacity="0.6"/>
-            <circle cx="20" cy="20" r="4" fill="var(--color-accent)"/>
-            <path d="M20 8 L20 14 M20 26 L20 32 M8 20 L14 20 M26 20 L32 20" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
-          </svg>
-        </div>
+      <span class="hs-div" aria-hidden="true"></span>
+      <div class="hs">
+        <span class="hs-n" data-count="5">0</span>
+        <span class="hs-l">Projects</span>
       </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════
-         ABOUT / PROFESSIONAL SUMMARY
-    ═══════════════════════════════════════════ -->
-    <section class="section section--about" id="about" aria-labelledby="about-heading">
-      <div class="container">
-        <div class="section-label reveal-fade">Professional Summary</div>
-
-        <div class="about-grid">
-          <div class="about-text-col">
-            <h2 id="about-heading" class="section-heading reveal-up">Building systems that<br/>connect, automate, and scale.</h2>
-            <div class="about-body reveal-up" style="--delay: 0.1s">
-              <p>I'm an Automation &amp; Solutions Engineer with 12+ years of combined experience across technology and e-commerce operations. My work sits at the intersection of API integration, workflow engineering, and AI-driven automation — translating complex business requirements into reliable, scalable systems.</p>
-              <p>At <strong>MyOperator (VoiceTree Technologies)</strong>, I design and deploy custom integration solutions for enterprise clients — connecting voice APIs, CRMs, and communication platforms through automation pipelines built in Workato, n8n, and Zapier. I've also developed AI-powered chatbot systems using ChatGPT and Gemini APIs, integrated into live support channels.</p>
-              <p>Before that, I spent three years managing multi-platform e-commerce operations across the UAE, maintaining around AED 100K in monthly revenue through a combination of cloud-hosted automation, inventory scripting, and data-driven marketing.</p>
-              <p>I work across the full stack of modern automation — from writing Python and Google Apps Script to building no-code portals in Bubble.io, to testing and validating APIs in Postman. I gather client requirements, write PRDs, and see integrations through from scoping to delivery.</p>
-            </div>
-            <div class="about-links reveal-up" style="--delay: 0.2s">
-              <a href="https://linkedin.com/in/imsumitbansal" class="about-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-                LinkedIn
-              </a>
-              <a href="https://github.com/Sumitbansal96" class="about-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                GitHub
-              </a>
-              <a href="mailto:sumit.mft@gmail.com" class="about-link" aria-label="Email Sumit">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                Email
-              </a>
-            </div>
-          </div>
-
-          <div class="about-meta-col">
-            <div class="meta-card reveal-up" style="--delay: 0.15s">
-              <div class="meta-card-row">
-                <span class="meta-label">Location</span>
-                <span class="meta-value">Noida, India</span>
-              </div>
-              <div class="meta-card-row">
-                <span class="meta-label">Current Role</span>
-                <span class="meta-value">Automation &amp; Solutions Engineer</span>
-              </div>
-              <div class="meta-card-row">
-                <span class="meta-label">At</span>
-                <span class="meta-value">MyOperator (VoiceTree Technologies)</span>
-              </div>
-              <div class="meta-card-row">
-                <span class="meta-label">Education</span>
-                <span class="meta-value">BCA — LPU, 2026</span>
-              </div>
-              <div class="meta-card-row">
-                <span class="meta-label">Available</span>
-                <span class="meta-value meta-value--highlight">Open to opportunities</span>
-              </div>
-            </div>
-
-            <div class="about-domain-tags reveal-up" style="--delay: 0.25s" aria-label="Domain areas">
-              <span class="domain-tag">Workflow Automation</span>
-              <span class="domain-tag">API Integration</span>
-              <span class="domain-tag">AI Chatbots</span>
-              <span class="domain-tag">CRM Architecture</span>
-              <span class="domain-tag">No-Code / Low-Code</span>
-              <span class="domain-tag">E-commerce Ops</span>
-              <span class="domain-tag">Cloud Scripting</span>
-              <span class="domain-tag">PRD / Documentation</span>
-            </div>
-          </div>
-        </div>
+      <span class="hs-div" aria-hidden="true"></span>
+      <div class="hs">
+        <span class="hs-n" data-count="15">0</span><span class="hs-sym">+</span>
+        <span class="hs-l">Platforms</span>
       </div>
-    </section>
+    </div>
 
-    <!-- ═══════════════════════════════════════════
-         EXPERIENCE TIMELINE
-    ═══════════════════════════════════════════ -->
-    <section class="section section--experience" id="experience" aria-labelledby="experience-heading">
-      <div class="container">
-        <div class="section-label reveal-fade">Career</div>
-        <h2 id="experience-heading" class="section-heading reveal-up">12 years across<br/>four countries of work.</h2>
+    <div class="hero-actions js-reveal" style="--d:0.2s">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#contact" class="btn-ghost">Get in Touch</a>
+    </div>
+  </div>
 
-        <div class="timeline" role="list">
-          <div class="timeline-progress-track" aria-hidden="true">
-            <div class="timeline-progress-fill" id="timelineFill"></div>
-          </div>
+  <div class="hero-stack-ticker" aria-hidden="true">
+    <div class="ticker-track" id="tickerTrack">
+      <span>Workato</span><span>n8n</span><span>Zapier</span><span>ChatGPT API</span><span>Gemini API</span><span>Bubble.io</span><span>Python</span><span>JavaScript</span><span>Postman</span><span>Bitrix24</span><span>LeadSquared</span><span>Zoho Flow</span><span>Google Apps Script</span><span>AWS Lambda</span><span>Shopify</span><span>Firebase</span>
+      <span>Workato</span><span>n8n</span><span>Zapier</span><span>ChatGPT API</span><span>Gemini API</span><span>Bubble.io</span><span>Python</span><span>JavaScript</span><span>Postman</span><span>Bitrix24</span><span>LeadSquared</span><span>Zoho Flow</span><span>Google Apps Script</span><span>AWS Lambda</span><span>Shopify</span><span>Firebase</span>
+    </div>
+  </div>
 
-          <!-- Role 1 -->
-          <article class="timeline-item reveal-timeline" role="listitem" data-index="0">
-            <div class="timeline-node" aria-hidden="true">
-              <div class="timeline-dot"></div>
-            </div>
-            <div class="timeline-body">
-              <div class="timeline-meta">
-                <span class="timeline-date">Apr 2024 — Present</span>
-                <span class="timeline-location">Noida, India</span>
-              </div>
-              <h3 class="timeline-role">Automation &amp; Solutions Engineer</h3>
-              <div class="timeline-company">MyOperator — VoiceTree Technologies Pvt. Ltd.</div>
-              <ul class="timeline-bullets" role="list">
-                <li>Develop and deploy automation workflows across Workato, n8n, and Zapier for enterprise clients</li>
-                <li>Design custom API integration solutions using MyOperator's voice and messaging APIs — connecting GuruDB, Bitrix24, LeadSquared, Crisp, and Zopim</li>
-                <li>Build AI-driven chatbot solutions using ChatGPT and Gemini APIs, integrated into live customer support channels</li>
-                <li>Develop automation scripts in JavaScript, Python, and Google Apps Script</li>
-                <li>Build no-code/low-code applications and workflows in Bubble.io and Zoho Flow</li>
-                <li>Gather client requirements, author PRDs, and validate integrations via Postman</li>
-              </ul>
-              <div class="timeline-stack" aria-label="Technologies used">
-                <span>Workato</span><span>n8n</span><span>Zapier</span><span>ChatGPT API</span><span>Gemini API</span><span>Bubble.io</span><span>Bitrix24</span><span>LeadSquared</span><span>Python</span><span>Google Apps Script</span>
-              </div>
-            </div>
-          </article>
+  <div class="scroll-hint" aria-hidden="true">
+    <span class="sh-label">scroll</span>
+    <span class="sh-line"></span>
+  </div>
+</section>
 
-          <!-- Role 2 -->
-          <article class="timeline-item reveal-timeline" role="listitem" data-index="1">
-            <div class="timeline-node" aria-hidden="true">
-              <div class="timeline-dot"></div>
-            </div>
-            <div class="timeline-body">
-              <div class="timeline-meta">
-                <span class="timeline-date">Oct 2020 — Jan 2024</span>
-                <span class="timeline-location">Dubai, UAE</span>
-              </div>
-              <h3 class="timeline-role">Ecommerce &amp; Digital Marketing Manager</h3>
-              <div class="timeline-company">Merw General Trading LLC</div>
-              <ul class="timeline-bullets" role="list">
-                <li>Managed multi-platform e-commerce operations across Shopify, Amazon.ae, Noon.com, and Carrefour Marketplace</li>
-                <li>Sustained consistent monthly revenues around AED 100K with 35–40% net profit margins</li>
-                <li>Built cloud-hosted automation with n8n and Workato for behavior-based email flows and seasonal targeting</li>
-                <li>Automated inventory and order management using VBScript and Google Sheets scripting</li>
-                <li>Led digital marketing and SEO across Google Ads, Facebook, and Instagram</li>
-                <li>Coordinated import/export logistics between UAE, Brazil, and Turkmenistan</li>
-              </ul>
-              <div class="timeline-stack" aria-label="Technologies used">
-                <span>Shopify</span><span>n8n</span><span>Workato</span><span>Amazon.ae</span><span>Noon.com</span><span>VBScript</span><span>Google Sheets</span><span>Google Ads</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Role 3 -->
-          <article class="timeline-item reveal-timeline" role="listitem" data-index="2">
-            <div class="timeline-node" aria-hidden="true">
-              <div class="timeline-dot"></div>
-            </div>
-            <div class="timeline-body">
-              <div class="timeline-meta">
-                <span class="timeline-date">Sep 2017 — Mar 2020</span>
-                <span class="timeline-location">New Delhi, India</span>
-              </div>
-              <h3 class="timeline-role">Marketing &amp; E-commerce Manager</h3>
-              <div class="timeline-company">Flaberry Services Pvt. Ltd.</div>
-              <ul class="timeline-bullets" role="list">
-                <li>Executed targeted digital marketing campaigns and developed HTML/CSS email templates</li>
-                <li>Integrated Freshchat and WhatsApp with internal CRM systems</li>
-                <li>Achieved a 30% increase in online sales during tenure</li>
-                <li>Used MySQL Workbench on AWS for data analysis supporting e-commerce decisions</li>
-                <li>Authored support and technical documentation on Confluence</li>
-              </ul>
-              <div class="timeline-stack" aria-label="Technologies used">
-                <span>Freshchat</span><span>WhatsApp API</span><span>MySQL</span><span>AWS</span><span>HTML/CSS</span><span>Confluence</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Role 4 -->
-          <article class="timeline-item reveal-timeline" role="listitem" data-index="3">
-            <div class="timeline-node" aria-hidden="true">
-              <div class="timeline-dot"></div>
-            </div>
-            <div class="timeline-body">
-              <div class="timeline-meta">
-                <span class="timeline-date">May 2016 — Jul 2017</span>
-                <span class="timeline-location">New Delhi, India</span>
-              </div>
-              <h3 class="timeline-role">Product &amp; E-commerce Manager</h3>
-              <div class="timeline-company">MyFlowerTree.com</div>
-              <ul class="timeline-bullets" role="list">
-                <li>Drove online sales growth through digital marketing and platform optimization</li>
-                <li>Expanded into new market segments and geographic regions</li>
-                <li>Helped establish a franchise model for B2B partnership development</li>
-                <li>Managed customer relations and supplier network operations</li>
-              </ul>
-              <div class="timeline-stack" aria-label="Technologies used">
-                <span>E-commerce</span><span>Digital Marketing</span><span>B2B Operations</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Role 5 -->
-          <article class="timeline-item reveal-timeline" role="listitem" data-index="4">
-            <div class="timeline-node" aria-hidden="true">
-              <div class="timeline-dot"></div>
-            </div>
-            <div class="timeline-body">
-              <div class="timeline-meta">
-                <span class="timeline-date">May 2015 — May 2016</span>
-                <span class="timeline-location">New Delhi, India</span>
-              </div>
-              <h3 class="timeline-role">E-commerce &amp; Operations Manager</h3>
-              <div class="timeline-company">Aryan Creations</div>
-              <ul class="timeline-bullets" role="list">
-                <li>Launched a "Dresses on Rent" e-commerce line from the ground up</li>
-                <li>Achieved 1.5x sales growth compared to the prior period through digital marketing campaigns</li>
-                <li>Managed daily store operations and used a Java-based ERP for billing processes</li>
-              </ul>
-              <div class="timeline-stack" aria-label="Technologies used">
-                <span>E-commerce</span><span>Java ERP</span><span>Operations</span>
-              </div>
-            </div>
-          </article>
-
-        </div>
+<!-- ══════════════════════════════════════
+     ABOUT
+══════════════════════════════════════ -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="sec-label js-reveal">01 — About</div>
+    <div class="about-grid">
+      <div class="about-left">
+        <h2 class="sec-title js-reveal" style="--d:0.05s">Building systems<br>that connect,<br>automate, and scale.</h2>
       </div>
-    </section>
+      <div class="about-right">
+        <p class="about-p js-reveal" style="--d:0.08s">Automation &amp; Solutions Engineer at <strong>MyOperator (VoiceTree Technologies)</strong> — designing custom integration solutions for enterprise clients across voice APIs, CRMs, and communication platforms.</p>
+        <p class="about-p js-reveal" style="--d:0.12s">Previously ran multi-platform e-commerce operations in Dubai sustaining ~AED 100K monthly revenue, with cloud-hosted automation handling inventory, email flows, and reporting. Before that, built CRM integrations, chat automation, and data pipelines across several startups in New Delhi.</p>
+        <p class="about-p js-reveal" style="--d:0.16s">I work across the full automation stack — from writing Python and Google Apps Script to shipping no-code portals in Bubble.io, validating APIs in Postman, and gathering requirements to write PRDs.</p>
 
-    <!-- ═══════════════════════════════════════════
-         FEATURED PROJECTS
-    ═══════════════════════════════════════════ -->
-    <section class="section section--projects" id="projects" aria-labelledby="projects-heading">
-      <div class="container">
-        <div class="section-label reveal-fade">Projects</div>
-        <h2 id="projects-heading" class="section-heading reveal-up">Systems built,<br/>problems solved.</h2>
-        <p class="section-subtext reveal-up" style="--delay: 0.1s">A selection of integration and automation work. Full case studies available on GitHub.</p>
-
-        <div class="projects-grid">
-
-          <!-- Project 1 -->
-          <article class="project-card project-card--featured reveal-project" aria-label="AI-Driven Chatbot Integration">
-            <div class="project-card-inner">
-              <div class="project-accent-bar"></div>
-              <div class="project-header">
-                <div class="project-icon" aria-hidden="true">
-                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-                    <rect x="3" y="5" width="22" height="16" rx="3" stroke="currentColor" stroke-width="1.5"/>
-                    <path d="M9 23 L14 19 L19 23" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-                    <circle cx="10" cy="13" r="1.5" fill="var(--color-accent)"/>
-                    <circle cx="14" cy="13" r="1.5" fill="var(--color-accent)"/>
-                    <circle cx="18" cy="13" r="1.5" fill="var(--color-accent)"/>
-                  </svg>
-                </div>
-                <span class="project-type">AI Automation</span>
-              </div>
-              <h3 class="project-title">AI-Driven Chatbot Integration</h3>
-              <p class="project-summary">Built an AI-powered support chatbot using ChatGPT and Gemini APIs, connected to live customer channels via Crisp and Zopim. Automated query resolution reduced manual agent load significantly.</p>
-              <div class="project-detail-reveal">
-                <div class="project-detail-row">
-                  <span class="project-detail-label">Problem</span>
-                  <span class="project-detail-value">High volume of repetitive customer support queries consuming agent time</span>
-                </div>
-                <div class="project-detail-row">
-                  <span class="project-detail-label">Approach</span>
-                  <span class="project-detail-value">LLM-based intent recognition integrated into active support chat channels with escalation logic</span>
-                </div>
-                <div class="project-detail-row">
-                  <span class="project-detail-label">Outcome</span>
-                  <span class="project-detail-value">Significantly improved response times and automated resolution of common queries</span>
-                </div>
-              </div>
-              <div class="project-stack" aria-label="Tools used">
-                <span>ChatGPT API</span><span>Gemini API</span><span>Crisp</span><span>Zopim</span><span>JavaScript</span>
-              </div>
-              <a href="https://github.com/Sumitbansal96/ai-chatbot-integration" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View AI Chatbot case study on GitHub">
-                Case Study
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 2 -->
-          <article class="project-card reveal-project" aria-label="Automated Lead Management">
-            <div class="project-card-inner">
-              <div class="project-accent-bar"></div>
-              <div class="project-header">
-                <div class="project-icon" aria-hidden="true">
-                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-                    <circle cx="7" cy="7" r="3" stroke="currentColor" stroke-width="1.5"/>
-                    <circle cx="21" cy="7" r="3" stroke="currentColor" stroke-width="1.5"/>
-                    <circle cx="14" cy="21" r="3" stroke="currentColor" stroke-width="1.5"/>
-                    <path d="M10 7 L18 7 M19 10 L16 18 M9 10 L12 18" stroke="var(--color-accent)" stroke-width="1.5"/>
-                  </svg>
-                </div>
-                <span class="project-type">CRM Automation</span>
-              </div>
-              <h3 class="project-title">Automated Lead Management</h3>
-              <p class="project-summary">Automated lead pipeline from social media forms and GuruDB into LeadSquared CRM via Zapier and Zoho Flow. Enabled real-time lead tracking and follow-up sequences without manual data entry.</p>
-              <div class="project-detail-reveal">
-                <div class="project-detail-row">
-                  <span class="project-detail-label">Problem</span>
-                  <span class="project-detail-value">Leads from multiple sources falling through gaps due to manual handling</span>
-                </div>
-                <div class="project-detail-row">
-                  <span class="project-detail-label">Approach</span>
-                  <span class="project-detail-value">Multi-source automation with deduplication and CRM sync via Zapier and Zoho Flow</span>
-                </div>
-                <div class="project-detail-row">
-                  <span class="project-detail-label">Outcome</span>
-                  <span class="project-detail-value">Real-time lead tracking with automated follow-up sequences</span>
-                </div>
-              </div>
-              <div class="project-stack" aria-label="Tools used">
-                <span>Zapier</span><span>Zoho Flow</span><span>GuruDB</span><span>LeadSquared</span>
-              </div>
-              <a href="https://github.com/Sumitbansal96/lead-automation-workflow" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View Lead Automation case study on GitHub">
-                Case Study
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 3 -->
-          <article class="project-card reveal-project" aria-label="Cross-Platform Data Synchronization">
-            <div class="project-card-inner">
-              <div class="project-accent-bar"></div>
-              <div class="project-header">
-                <div class="project-icon" aria-hidden="true">
-                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-                    <rect x="3" y="4" width="9" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/>
-                    <rect x="16" y="16" width="9" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/>
-                    <path d="M12 8 Q19 8 19 16" stroke="var(--color-accent)" stroke-width="1.5" stroke-dasharray="3 2"/>
-                    <path d="M16 14 L19 16 L16 18" fill="none" stroke="var(--color-accent)" stroke-width="1.5"/>
-                  </svg>
-                </div>
-                <span class="project-type">Data Engineering</span>
-              </div>
-              <h3 class="project-title">Cross-Platform Data Synchronization</h3>
-              <p class="project-summary">Implemented contact and campaign data sync between GuruDB and EnumHQ using Python scripts and Google Apps Script. Ensured marketing and CRM systems stayed consistent without manual reconciliation.</p>
-              <div class="project-detail-reveal">
-                <div class="project-detail-row">
-                  <span class="project-detail-label">Problem</span>
-                  <span class="project-detail-value">Inconsistent contact data across marketing and CRM platforms causing campaign errors</span>
-                </div>
-                <div class="project-detail-row">
-                  <span class="project-detail-label">Approach</span>
-                  <span class="project-detail-value">Scripted sync layer between GuruDB and EnumHQ with conflict resolution logic</span>
-                </div>
-                <div class="project-detail-row">
-                  <span class="project-detail-label">Outcome</span>
-                  <span class="project-detail-value">Consistent data across systems, eliminating manual reconciliation overhead</span>
-                </div>
-              </div>
-              <div class="project-stack" aria-label="Tools used">
-                <span>Python</span><span>Google Apps Script</span><span>GuruDB</span><span>EnumHQ</span>
-              </div>
-              <a href="https://github.com/Sumitbansal96/data-sync-pipeline" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View Data Sync case study on GitHub">
-                Case Study
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 4 -->
-          <article class="project-card reveal-project" aria-label="No-Code API Integration Portal">
-            <div class="project-card-inner">
-              <div class="project-accent-bar"></div>
-              <div class="project-header">
-                <div class="project-icon" aria-hidden="true">
-                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-                    <rect x="4" y="6" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/>
-                    <path d="M4 11 L24 11" stroke="currentColor" stroke-width="1.5"/>
-                    <rect x="8" y="14" width="5" height="4" rx="1" fill="var(--color-accent)" opacity="0.7"/>
-                    <rect x="15" y="14" width="5" height="4" rx="1" stroke="var(--color-accent)" stroke-width="1"/>
-                  </svg>
-                </div>
-                <span class="project-type">No-Code Platform</span>
-              </div>
-              <h3 class="project-title">No-Code API Integration Portal</h3>
-              <p class="project-summary">Built a custom no-code portal in Bubble.io allowing clients to configure API-based automations — for example, linking Bitrix24 CRM to communication apps — without engineering involvement. Reduced deployment friction considerably.</p>
-              <div class="project-detail-reveal">
-                <div class="project-detail-row">
-                  <span class="project-detail-label">Problem</span>
-                  <span class="project-detail-value">Every client integration required engineering time for configuration</span>
-                </div>
-                <div class="project-detail-row">
-                  <span class="project-detail-label">Approach</span>
-                  <span class="project-detail-value">Self-serve Bubble.io portal with API credential management and workflow templates</span>
-                </div>
-                <div class="project-detail-row">
-                  <span class="project-detail-label">Outcome</span>
-                  <span class="project-detail-value">Reduced deployment friction and accelerated client onboarding</span>
-                </div>
-              </div>
-              <div class="project-stack" aria-label="Tools used">
-                <span>Bubble.io</span><span>Bitrix24</span><span>REST APIs</span><span>Zoho Flow</span>
-              </div>
-              <a href="https://github.com/Sumitbansal96/nocode-integration-portal" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View No-Code Portal case study on GitHub">
-                Case Study
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 5 -->
-          <article class="project-card reveal-project" aria-label="E-commerce Automation Scripts">
-            <div class="project-card-inner">
-              <div class="project-accent-bar"></div>
-              <div class="project-header">
-                <div class="project-icon" aria-hidden="true">
-                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-                    <path d="M6 6 L6 22 L22 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                    <path d="M9 18 L12 13 L15 16 L19 10" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="19" cy="10" r="2" fill="var(--color-accent)"/>
-                  </svg>
-                </div>
-                <span class="project-type">Operations Automation</span>
-              </div>
-              <h3 class="project-title">E-commerce Automation Scripts</h3>
-              <p class="project-summary">Automated product uploads, inventory updates, and pricing sync across Shopify and Amazon platforms using Google Sheets scripting and platform APIs. Eliminated over 10 hours of manual operations per week.</p>
-              <div class="project-detail-reveal">
-                <div class="project-detail-row">
-                  <span class="project-detail-label">Problem</span>
-                  <span class="project-detail-value">Manual product and inventory management consuming significant operational time</span>
-                </div>
-                <div class="project-detail-row">
-                  <span class="project-detail-label">Approach</span>
-                  <span class="project-detail-value">Scripted automation using Google Sheets + Shopify/Amazon APIs for bulk operations</span>
-                </div>
-                <div class="project-detail-row">
-                  <span class="project-detail-label">Outcome</span>
-                  <span class="project-detail-value">Saved 10+ hours of manual work per week across operations</span>
-                </div>
-              </div>
-              <div class="project-stack" aria-label="Tools used">
-                <span>Google Sheets</span><span>Shopify API</span><span>Amazon API</span><span>VBScript</span><span>Google Apps Script</span>
-              </div>
-              <a href="https://github.com/Sumitbansal96/ecommerce-automation-scripts" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View E-commerce Automation case study on GitHub">
-                Case Study
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </article>
-
+        <div class="about-meta js-reveal" style="--d:0.2s">
+          <div class="am-row"><span class="am-k">Location</span><span class="am-v">Noida, India</span></div>
+          <div class="am-row"><span class="am-k">Currently</span><span class="am-v">MyOperator · VoiceTree Technologies</span></div>
+          <div class="am-row"><span class="am-k">Status</span><span class="am-v am-open">Open to opportunities</span></div>
         </div>
-      </div>
-    </section>
 
-    <!-- ═══════════════════════════════════════════
-         SKILLS & STACK
-    ═══════════════════════════════════════════ -->
-    <section class="section section--skills" id="skills" aria-labelledby="skills-heading">
-      <div class="container">
-        <div class="section-label reveal-fade">Stack</div>
-        <h2 id="skills-heading" class="section-heading reveal-up">Tools that do the work.</h2>
-        <p class="section-subtext reveal-up" style="--delay: 0.1s">Organized by system layer — from automation orchestration to scripting to platforms.</p>
-
-        <div class="skills-system reveal-up" style="--delay: 0.2s">
-
-          <div class="skill-group">
-            <div class="skill-group-header">
-              <div class="skill-group-icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-              </div>
-              <span class="skill-group-label">Automation Platforms</span>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag skill-tag--primary" data-years="5+">Zapier <em>5+ yr</em></span>
-              <span class="skill-tag skill-tag--primary" data-years="3+">Workato <em>3+ yr</em></span>
-              <span class="skill-tag skill-tag--primary" data-years="3+">n8n <em>3+ yr</em></span>
-              <span class="skill-tag">Zoho Flow</span>
-              <span class="skill-tag">Bubble.io</span>
-              <span class="skill-tag">ChatGPT Agent Builder</span>
-            </div>
-          </div>
-
-          <div class="skill-group">
-            <div class="skill-group-header">
-              <div class="skill-group-icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-              </div>
-              <span class="skill-group-label">Programming &amp; Scripting</span>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag skill-tag--secondary">JavaScript</span>
-              <span class="skill-tag skill-tag--secondary">Python</span>
-              <span class="skill-tag skill-tag--secondary">Google Apps Script</span>
-              <span class="skill-tag">SQL</span>
-              <span class="skill-tag">Visual Basic</span>
-              <span class="skill-tag">HTML / CSS</span>
-            </div>
-          </div>
-
-          <div class="skill-group">
-            <div class="skill-group-header">
-              <div class="skill-group-icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
-              </div>
-              <span class="skill-group-label">API &amp; Integration Tools</span>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag">Postman</span>
-              <span class="skill-tag">ChatGPT API</span>
-              <span class="skill-tag">Gemini API</span>
-              <span class="skill-tag">GuruDB</span>
-              <span class="skill-tag">REST APIs</span>
-              <span class="skill-tag">Crisp</span>
-            </div>
-          </div>
-
-          <div class="skill-group">
-            <div class="skill-group-header">
-              <div class="skill-group-icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-              </div>
-              <span class="skill-group-label">CRM &amp; Databases</span>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag">Bitrix24</span>
-              <span class="skill-tag">LeadSquared</span>
-              <span class="skill-tag">Zoho CRM</span>
-              <span class="skill-tag">Firebase</span>
-              <span class="skill-tag">MySQL Workbench</span>
-            </div>
-          </div>
-
-          <div class="skill-group">
-            <div class="skill-group-header">
-              <div class="skill-group-icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
-              </div>
-              <span class="skill-group-label">Cloud &amp; Infrastructure</span>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag">AWS EventBridge</span>
-              <span class="skill-tag">AWS Lambda</span>
-              <span class="skill-tag">Git</span>
-              <span class="skill-tag">GitHub</span>
-            </div>
-          </div>
-
-          <div class="skill-group">
-            <div class="skill-group-header">
-              <div class="skill-group-icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
-              </div>
-              <span class="skill-group-label">E-commerce Platforms</span>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag">Shopify</span>
-              <span class="skill-tag">Magento</span>
-              <span class="skill-tag">Amazon UAE/SA</span>
-              <span class="skill-tag">Noon.com</span>
-              <span class="skill-tag">Carrefour Marketplace</span>
-            </div>
-          </div>
-
-          <div class="skill-group">
-            <div class="skill-group-header">
-              <div class="skill-group-icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-              </div>
-              <span class="skill-group-label">Documentation &amp; PM</span>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag">PRD Creation</span>
-              <span class="skill-tag">Jira</span>
-              <span class="skill-tag">Confluence</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════
-         EDUCATION
-    ═══════════════════════════════════════════ -->
-    <section class="section section--education" id="education" aria-labelledby="education-heading">
-      <div class="container">
-        <div class="section-label reveal-fade">Education</div>
-        <h2 id="education-heading" class="section-heading reveal-up">Academic background.</h2>
-
-        <div class="education-grid">
-          <article class="edu-card reveal-up" style="--delay: 0.05s">
-            <div class="edu-year">2026</div>
-            <div class="edu-body">
-              <h3 class="edu-degree">Bachelor of Computer Programming</h3>
-              <div class="edu-institution">Lovely Professional University (LPU) — Online</div>
-              <p class="edu-note">Specific Applications track. Currently enrolled.</p>
-            </div>
-          </article>
-          <article class="edu-card reveal-up" style="--delay: 0.1s">
-            <div class="edu-year">2014</div>
-            <div class="edu-body">
-              <h3 class="edu-degree">Higher Secondary Certificate (12th)</h3>
-              <div class="edu-institution">CBSE, India</div>
-            </div>
-          </article>
-          <article class="edu-card reveal-up" style="--delay: 0.15s">
-            <div class="edu-year">2012</div>
-            <div class="edu-body">
-              <h3 class="edu-degree">Secondary School Certificate (10th)</h3>
-              <div class="edu-institution">CBSE, India</div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════
-         GITHUB
-    ═══════════════════════════════════════════ -->
-    <section class="section section--github" id="github" aria-labelledby="github-heading">
-      <div class="container">
-        <div class="github-block reveal-up">
-          <div class="github-block-icon" aria-hidden="true">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-          </div>
-          <div class="github-block-text">
-            <h2 id="github-heading">Explore the repositories.</h2>
-            <p>Case studies, architecture notes, and workflow documentation — organized by integration type. No toy projects, no filler. Each repo documents a real system.</p>
-          </div>
-          <a href="https://github.com/Sumitbansal96" class="btn btn--primary" target="_blank" rel="noopener noreferrer" aria-label="Visit Sumit's GitHub profile">
-            Visit GitHub
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════
-         CONTACT
-    ═══════════════════════════════════════════ -->
-    <section class="section section--contact" id="contact" aria-labelledby="contact-heading">
-      <div class="container">
-        <div class="section-label reveal-fade">Contact</div>
-        <h2 id="contact-heading" class="section-heading reveal-up">Let's build something together.</h2>
-        <p class="section-subtext reveal-up" style="--delay: 0.1s">Open to automation engineering roles, integration consulting, and technical collaborations. Based in Noida, India — available for remote and hybrid engagements.</p>
-
-        <div class="contact-grid reveal-up" style="--delay: 0.2s">
-          <a href="mailto:sumit.mft@gmail.com" class="contact-card" aria-label="Send email to Sumit">
-            <div class="contact-card-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            </div>
-            <div>
-              <div class="contact-card-label">Email</div>
-              <div class="contact-card-value">sumit.mft@gmail.com</div>
-            </div>
-          </a>
-          <a href="tel:+917838622745" class="contact-card" aria-label="Call Sumit">
-            <div class="contact-card-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-            </div>
-            <div>
-              <div class="contact-card-label">Phone</div>
-              <div class="contact-card-value">+91 7838 622 745</div>
-            </div>
-          </a>
-          <a href="https://linkedin.com/in/imsumitbansal" class="contact-card" target="_blank" rel="noopener noreferrer" aria-label="Connect on LinkedIn">
-            <div class="contact-card-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-            </div>
-            <div>
-              <div class="contact-card-label">LinkedIn</div>
-              <div class="contact-card-value">imsumitbansal</div>
-            </div>
-          </a>
-          <a href="https://github.com/Sumitbansal96" class="contact-card" target="_blank" rel="noopener noreferrer" aria-label="View GitHub profile">
-            <div class="contact-card-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
-            </div>
-            <div>
-              <div class="contact-card-label">GitHub</div>
-              <div class="contact-card-value">Sumitbansal96</div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-left">
-          <span class="footer-name">Sumit Bansal</span>
-          <span class="footer-role">Automation &amp; Solutions Engineer</span>
-        </div>
-        <div class="footer-right">
-          <span class="footer-note">Noida, India · <span id="currentYear"></span></span>
+        <div class="about-links js-reveal" style="--d:0.24s">
+          <a href="https://linkedin.com/in/imsumitbansal" class="alink" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://github.com/Sumitbansal96" class="alink" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="mailto:sumit.mft@gmail.com" class="alink">Email ↗</a>
         </div>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="assets/js/main.js"></script>
+<!-- ══════════════════════════════════════
+     EXPERIENCE
+══════════════════════════════════════ -->
+<section class="section section--dark" id="experience">
+  <div class="wrap">
+    <div class="sec-label js-reveal">02 — Work</div>
+    <h2 class="sec-title js-reveal" style="--d:0.05s">12 years,<br>four cities.</h2>
+
+    <div class="timeline">
+      <div class="tl-spine" aria-hidden="true"><div class="tl-fill" id="tlFill"></div></div>
+
+      <article class="tl-item js-tl" data-i="0">
+        <div class="tl-dot" aria-hidden="true"></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <div>
+              <span class="tl-date">Apr 2024 — Present</span>
+              <h3 class="tl-role">Automation &amp; Solutions Engineer</h3>
+              <span class="tl-co">MyOperator · VoiceTree Technologies · Noida</span>
+            </div>
+            <span class="tl-badge">Current</span>
+          </div>
+          <ul class="tl-pts">
+            <li>Enterprise automation pipelines via Workato, n8n, Zapier</li>
+            <li>Custom API integrations — GuruDB, Bitrix24, LeadSquared, Crisp, Zopim</li>
+            <li>AI chatbots using ChatGPT &amp; Gemini APIs in live support channels</li>
+            <li>No-code/low-code apps in Bubble.io and Zoho Flow</li>
+            <li>Client requirements → PRDs → validated integrations via Postman</li>
+          </ul>
+          <div class="tl-tags"><span>Workato</span><span>n8n</span><span>Zapier</span><span>ChatGPT API</span><span>Bubble.io</span><span>Python</span></div>
+        </div>
+      </article>
+
+      <article class="tl-item js-tl" data-i="1">
+        <div class="tl-dot" aria-hidden="true"></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <div>
+              <span class="tl-date">Oct 2020 — Jan 2024</span>
+              <h3 class="tl-role">Ecommerce &amp; Digital Marketing Manager</h3>
+              <span class="tl-co">Merw General Trading LLC · Dubai, UAE</span>
+            </div>
+          </div>
+          <ul class="tl-pts">
+            <li>Multi-platform e-commerce across Shopify, Amazon.ae, Noon.com, Carrefour</li>
+            <li>~AED 100K/month revenue with 35–40% net margin</li>
+            <li>Cloud automation (n8n, Workato) for email flows and seasonal targeting</li>
+            <li>Inventory &amp; orders automated via VBScript and Google Sheets scripting</li>
+          </ul>
+          <div class="tl-tags"><span>Shopify</span><span>n8n</span><span>Amazon.ae</span><span>VBScript</span><span>Google Sheets</span></div>
+        </div>
+      </article>
+
+      <article class="tl-item js-tl" data-i="2">
+        <div class="tl-dot" aria-hidden="true"></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <div>
+              <span class="tl-date">Sep 2017 — Mar 2020</span>
+              <h3 class="tl-role">Marketing &amp; E-commerce Manager</h3>
+              <span class="tl-co">Flaberry Services Pvt. Ltd. · New Delhi</span>
+            </div>
+          </div>
+          <ul class="tl-pts">
+            <li>Integrated Freshchat and WhatsApp with internal CRM</li>
+            <li>30% increase in online sales during tenure</li>
+            <li>MySQL on AWS for data analysis; authored docs on Confluence</li>
+          </ul>
+          <div class="tl-tags"><span>Freshchat</span><span>WhatsApp API</span><span>MySQL</span><span>AWS</span></div>
+        </div>
+      </article>
+
+      <article class="tl-item js-tl" data-i="3">
+        <div class="tl-dot" aria-hidden="true"></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <div>
+              <span class="tl-date">May 2015 — Jul 2017</span>
+              <h3 class="tl-role">Product &amp; E-commerce Manager</h3>
+              <span class="tl-co">MyFlowerTree.com &amp; Aryan Creations · New Delhi</span>
+            </div>
+          </div>
+          <ul class="tl-pts">
+            <li>Launched "Dresses on Rent" e-commerce line — 1.5× sales growth</li>
+            <li>Expanded into new markets; established B2B franchise model</li>
+            <li>Java ERP for billing; managed supplier and customer networks</li>
+          </ul>
+          <div class="tl-tags"><span>E-commerce</span><span>Java ERP</span><span>B2B</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     PROJECTS
+══════════════════════════════════════ -->
+<section class="section" id="projects">
+  <div class="wrap">
+    <div class="sec-label js-reveal">03 — Projects</div>
+    <h2 class="sec-title js-reveal" style="--d:0.05s">Systems built,<br>problems solved.</h2>
+
+    <div class="proj-grid">
+
+      <article class="proj-card proj-card--wide js-proj" style="--pi:0">
+        <div class="proj-num">01</div>
+        <div class="proj-body">
+          <div class="proj-type">AI Automation</div>
+          <h3 class="proj-title">AI-Driven Chatbot Integration</h3>
+          <p class="proj-desc">Built an AI-powered support chatbot using ChatGPT and Gemini APIs, connected to live channels via Crisp and Zopim. Automated first-level query resolution with clean escalation logic to human agents.</p>
+          <div class="proj-reveal">
+            <div class="pr-row"><span class="pr-k">Problem</span><span class="pr-v">High-volume repetitive queries draining agent time</span></div>
+            <div class="pr-row"><span class="pr-k">Approach</span><span class="pr-v">LLM intent classification + response generation with escalation threshold</span></div>
+            <div class="pr-row"><span class="pr-k">Result</span><span class="pr-v">Automated resolution of common queries; significantly improved response times</span></div>
+          </div>
+        </div>
+        <div class="proj-foot">
+          <div class="proj-stack"><span>ChatGPT API</span><span>Gemini API</span><span>Crisp</span><span>Zopim</span><span>JS</span></div>
+          <a href="https://github.com/Sumitbansal96/ai-chatbot-integration" class="proj-link" target="_blank" rel="noopener">Case Study ↗</a>
+        </div>
+      </article>
+
+      <article class="proj-card js-proj" style="--pi:1">
+        <div class="proj-num">02</div>
+        <div class="proj-body">
+          <div class="proj-type">CRM Automation</div>
+          <h3 class="proj-title">Automated Lead Management</h3>
+          <p class="proj-desc">Multi-source lead pipeline from GuruDB and social forms into LeadSquared CRM via Zapier and Zoho Flow. Real-time sync with automated follow-up sequences.</p>
+          <div class="proj-reveal">
+            <div class="pr-row"><span class="pr-k">Result</span><span class="pr-v">Zero manual data entry; real-time CRM with auto follow-ups</span></div>
+          </div>
+        </div>
+        <div class="proj-foot">
+          <div class="proj-stack"><span>Zapier</span><span>Zoho Flow</span><span>LeadSquared</span></div>
+          <a href="https://github.com/Sumitbansal96/lead-automation-workflow" class="proj-link" target="_blank" rel="noopener">Case Study ↗</a>
+        </div>
+      </article>
+
+      <article class="proj-card js-proj" style="--pi:2">
+        <div class="proj-num">03</div>
+        <div class="proj-body">
+          <div class="proj-type">Data Engineering</div>
+          <h3 class="proj-title">Cross-Platform Data Sync</h3>
+          <p class="proj-desc">Contact and campaign data synchronization between GuruDB and EnumHQ using Python scripts and Google Apps Script with conflict resolution logic.</p>
+          <div class="proj-reveal">
+            <div class="pr-row"><span class="pr-k">Result</span><span class="pr-v">Eliminated manual reconciliation; consistent data across both platforms</span></div>
+          </div>
+        </div>
+        <div class="proj-foot">
+          <div class="proj-stack"><span>Python</span><span>Google Apps Script</span><span>GuruDB</span></div>
+          <a href="https://github.com/Sumitbansal96/data-sync-pipeline" class="proj-link" target="_blank" rel="noopener">Case Study ↗</a>
+        </div>
+      </article>
+
+      <article class="proj-card js-proj" style="--pi:3">
+        <div class="proj-num">04</div>
+        <div class="proj-body">
+          <div class="proj-type">No-Code Platform</div>
+          <h3 class="proj-title">No-Code Integration Portal</h3>
+          <p class="proj-desc">Self-serve Bubble.io portal for clients to configure API automations — linking Bitrix24 CRM to communication apps — without engineering involvement.</p>
+          <div class="proj-reveal">
+            <div class="pr-row"><span class="pr-k">Result</span><span class="pr-v">Reduced deployment friction; accelerated client onboarding</span></div>
+          </div>
+        </div>
+        <div class="proj-foot">
+          <div class="proj-stack"><span>Bubble.io</span><span>Bitrix24</span><span>REST APIs</span></div>
+          <a href="https://github.com/Sumitbansal96/nocode-integration-portal" class="proj-link" target="_blank" rel="noopener">Case Study ↗</a>
+        </div>
+      </article>
+
+      <article class="proj-card js-proj" style="--pi:4">
+        <div class="proj-num">05</div>
+        <div class="proj-body">
+          <div class="proj-type">Operations Automation</div>
+          <h3 class="proj-title">E-commerce Automation Scripts</h3>
+          <p class="proj-desc">Automated product uploads, inventory updates, and pricing sync across Shopify and Amazon using Google Sheets scripting and platform APIs.</p>
+          <div class="proj-reveal">
+            <div class="pr-row"><span class="pr-k">Result</span><span class="pr-v">10+ hours of manual work eliminated per week</span></div>
+          </div>
+        </div>
+        <div class="proj-foot">
+          <div class="proj-stack"><span>Google Apps Script</span><span>Shopify API</span><span>Amazon API</span></div>
+          <a href="https://github.com/Sumitbansal96/ecommerce-automation-scripts" class="proj-link" target="_blank" rel="noopener">Case Study ↗</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     SKILLS
+══════════════════════════════════════ -->
+<section class="section section--dark" id="skills">
+  <div class="wrap">
+    <div class="sec-label js-reveal">04 — Stack</div>
+    <h2 class="sec-title js-reveal" style="--d:0.05s">Tools that do<br>the work.</h2>
+
+    <div class="stack-grid">
+      <div class="sg-group js-reveal" style="--d:0.06s">
+        <div class="sg-label">Automation</div>
+        <div class="sg-tags">
+          <span class="sg-tag sg-tag--hl">Zapier <em>5+ yr</em></span>
+          <span class="sg-tag sg-tag--hl">Workato <em>3+ yr</em></span>
+          <span class="sg-tag sg-tag--hl">n8n <em>3+ yr</em></span>
+          <span class="sg-tag">Zoho Flow</span>
+          <span class="sg-tag">Bubble.io</span>
+          <span class="sg-tag">ChatGPT Agent Builder</span>
+        </div>
+      </div>
+      <div class="sg-group js-reveal" style="--d:0.1s">
+        <div class="sg-label">Languages</div>
+        <div class="sg-tags">
+          <span class="sg-tag sg-tag--med">JavaScript</span>
+          <span class="sg-tag sg-tag--med">Python</span>
+          <span class="sg-tag sg-tag--med">Google Apps Script</span>
+          <span class="sg-tag">SQL</span>
+          <span class="sg-tag">VBScript</span>
+          <span class="sg-tag">HTML / CSS</span>
+        </div>
+      </div>
+      <div class="sg-group js-reveal" style="--d:0.14s">
+        <div class="sg-label">APIs &amp; Integration</div>
+        <div class="sg-tags">
+          <span class="sg-tag">Postman</span>
+          <span class="sg-tag">ChatGPT API</span>
+          <span class="sg-tag">Gemini API</span>
+          <span class="sg-tag">GuruDB</span>
+          <span class="sg-tag">REST APIs</span>
+          <span class="sg-tag">Crisp</span>
+        </div>
+      </div>
+      <div class="sg-group js-reveal" style="--d:0.18s">
+        <div class="sg-label">CRM &amp; Data</div>
+        <div class="sg-tags">
+          <span class="sg-tag">Bitrix24</span>
+          <span class="sg-tag">LeadSquared</span>
+          <span class="sg-tag">Zoho CRM</span>
+          <span class="sg-tag">Firebase</span>
+          <span class="sg-tag">MySQL</span>
+        </div>
+      </div>
+      <div class="sg-group js-reveal" style="--d:0.22s">
+        <div class="sg-label">Cloud &amp; Infra</div>
+        <div class="sg-tags">
+          <span class="sg-tag">AWS EventBridge</span>
+          <span class="sg-tag">AWS Lambda</span>
+          <span class="sg-tag">Git</span>
+          <span class="sg-tag">GitHub</span>
+        </div>
+      </div>
+      <div class="sg-group js-reveal" style="--d:0.26s">
+        <div class="sg-label">E-commerce</div>
+        <div class="sg-tags">
+          <span class="sg-tag">Shopify</span>
+          <span class="sg-tag">Magento</span>
+          <span class="sg-tag">Amazon UAE/SA</span>
+          <span class="sg-tag">Noon.com</span>
+          <span class="sg-tag">Carrefour</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     EDUCATION
+══════════════════════════════════════ -->
+<section class="section" id="education">
+  <div class="wrap">
+    <div class="sec-label js-reveal">05 — Education</div>
+    <div class="edu-list">
+      <div class="edu-row js-reveal" style="--d:0.04s">
+        <span class="edu-yr">2026</span>
+        <div class="edu-mid">
+          <span class="edu-deg">Bachelor of Computer Programming</span>
+          <span class="edu-inst">Lovely Professional University — Online · In Progress</span>
+        </div>
+        <span class="edu-tag">BCA</span>
+      </div>
+      <div class="edu-row js-reveal" style="--d:0.08s">
+        <span class="edu-yr">2014</span>
+        <div class="edu-mid">
+          <span class="edu-deg">Higher Secondary Certificate</span>
+          <span class="edu-inst">CBSE, India</span>
+        </div>
+        <span class="edu-tag">12th</span>
+      </div>
+      <div class="edu-row js-reveal" style="--d:0.12s">
+        <span class="edu-yr">2012</span>
+        <div class="edu-mid">
+          <span class="edu-deg">Secondary School Certificate</span>
+          <span class="edu-inst">CBSE, India</span>
+        </div>
+        <span class="edu-tag">10th</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     CONTACT
+══════════════════════════════════════ -->
+<section class="section section--contact" id="contact">
+  <div class="wrap">
+    <div class="sec-label js-reveal">06 — Contact</div>
+    <h2 class="sec-title js-reveal" style="--d:0.05s">Let's build<br>something together.</h2>
+    <p class="contact-sub js-reveal" style="--d:0.1s">Open to automation engineering roles, integration consulting, and technical collaborations. Based in Noida — available remote and hybrid.</p>
+
+    <div class="contact-grid js-reveal" style="--d:0.15s">
+      <a href="mailto:sumit.mft@gmail.com" class="cc">
+        <span class="cc-k">Email</span>
+        <span class="cc-v">sumit.mft@gmail.com</span>
+      </a>
+      <a href="tel:+917838622745" class="cc">
+        <span class="cc-k">Phone</span>
+        <span class="cc-v">+91 7838 622 745</span>
+      </a>
+      <a href="https://linkedin.com/in/imsumitbansal" class="cc" target="_blank" rel="noopener">
+        <span class="cc-k">LinkedIn</span>
+        <span class="cc-v">imsumitbansal ↗</span>
+      </a>
+      <a href="https://github.com/Sumitbansal96" class="cc" target="_blank" rel="noopener">
+        <span class="cc-k">GitHub</span>
+        <span class="cc-v">Sumitbansal96 ↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span class="footer-name">Sumit Bansal · Automation &amp; Solutions Engineer</span>
+    <span class="footer-loc">Noida, India · <span id="yr"></span></span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
