@@ -32,35 +32,37 @@
 /* ─── DARK MODE (default) ──────────────────────────── */
 :root, [data-theme="dark"] {
   --bg:       #09090b;
-  --bg-2:     #0f1014;
-  --bg-3:     #141519;
-  --surface:  #1a1b22;
-  --border:   #22242e;
-  --border-2: #2a2d3a;
-  --text:     #e8eaf0;
-  --muted:    #6b6f84;
-  --faint:    #2e3048;
+  --bg-2:     #0d0f14;
+  --bg-3:     #13151c;
+  --surface:  #181a23;
+  --border:   #1e2130;
+  --border-2: #272b3f;
+  --text:     #eef0f8;
+  --muted:    #7b80a0;
+  --faint:    #2a2e48;
   --accent:   #00e5b8;
-  --accent-d: #00b892;
-  --accent-g: rgba(0,229,184,0.12);
-  --accent-s: rgba(0,229,184,0.06);
+  --accent-d: #00c49e;
+  --accent-g: rgba(0,229,184,0.22);
+  --accent-s: rgba(0,229,184,0.10);
+  --accent-pulse: rgba(0,229,184,0.35);
 }
 
 /* ─── LIGHT MODE ──────────────────────────────────── */
 [data-theme="light"] {
-  --bg:       #fafafa;
-  --bg-2:     #f3f4f6;
-  --bg-3:     #ebedf2;
+  --bg:       #f8faff;
+  --bg-2:     #eef1f9;
+  --bg-3:     #e4e8f4;
   --surface:  #ffffff;
-  --border:   #e2e4ec;
-  --border-2: #d4d7e3;
-  --text:     #111318;
-  --muted:    #5a5f78;
-  --faint:    #e0e2ec;
-  --accent:   #006b52;
-  --accent-d: #004f3c;
-  --accent-g: rgba(0,107,82,0.08);
-  --accent-s: rgba(0,107,82,0.04);
+  --border:   #d6daed;
+  --border-2: #c4cadf;
+  --text:     #0d0f1a;
+  --muted:    #52587a;
+  --faint:    #d4d8ec;
+  --accent:   #00a882;
+  --accent-d: #007e60;
+  --accent-g: rgba(0,168,130,0.15);
+  --accent-s: rgba(0,168,130,0.07);
+  --accent-pulse: rgba(0,168,130,0.3);
 }
 
 /* ─── BASE ────────────────────────────────────────── */
@@ -267,9 +269,19 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.05; text-wrap:
 .hero-canvas {
   position: absolute; inset: 0;
   pointer-events: none;
-  opacity: 0.55;
+  opacity: 0.85;
 }
-[data-theme="light"] .hero-canvas { opacity: 0.25; }
+[data-theme="light"] .hero-canvas { opacity: 0.45; }
+
+/* SVG Deco layer */
+.hero-deco {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  opacity: 0.18;
+  overflow: visible;
+}
+[data-theme="light"] .hero-deco { opacity: 0.12; }
 
 .hero-content {
   position: relative; z-index: 2;
@@ -328,7 +340,19 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.05; text-wrap:
   display: flex; align-items: flex-end; gap: var(--sp-6);
   margin-bottom: var(--sp-8);
 }
-.hs { display: flex; flex-direction: column; gap: 2px; }
+.hs {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: flex-start;
+}
+/* Number + suffix on same baseline row */
+.hs-top {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  line-height: 1;
+}
 .hs-n {
   font-family: var(--font-display);
   font-size: clamp(1.6rem, 3vw, 2.4rem);
@@ -336,7 +360,6 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.05; text-wrap:
   line-height: 1;
   color: var(--text);
   font-variant-numeric: tabular-nums;
-  display: inline;
 }
 .hs-sym {
   font-family: var(--font-display);
@@ -344,7 +367,9 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.05; text-wrap:
   font-weight: 800;
   color: var(--accent);
   line-height: 1;
-  display: inline;
+  /* small nudge so + sits visually aligned with top of number */
+  position: relative;
+  top: -2px;
 }
 .hs-l {
   font-family: var(--font-mono);
