@@ -77,40 +77,54 @@
   <svg class="hero-deco" id="heroDeco" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"></svg>
 
   <div class="hero-content">
-    <div class="hero-tag js-reveal">
-      <span class="tag-dot"></span>
-      <span class="tag-text" id="tagText">Workato Engineer</span>
-    </div>
-
-    <h1 class="hero-name js-reveal" style="--d:0.05s">
-      <span class="name-line" data-text="Sumit Bansal">Sumit Bansal</span>
-    </h1>
-
-    <p class="hero-sub js-reveal" style="--d:0.1s">
-      12+ years building systems that connect, automate, and scale —<br>
-      API integrations, AI workflows, e-commerce operations.
-    </p>
-
-    <div class="hero-stats js-reveal" style="--d:0.15s">
-      <div class="hs">
-        <div class="hs-top"><span class="hs-n" data-count="12">0</span><span class="hs-sym">+</span></div>
-        <span class="hs-l">Years</span>
+    <div class="hero-copy">
+      <div class="hero-tag js-reveal">
+        <span class="tag-dot"></span>
+        <span class="tag-text" id="tagText">Workato Engineer</span>
       </div>
-      <span class="hs-div" aria-hidden="true"></span>
-      <div class="hs">
-        <div class="hs-top"><span class="hs-n" data-count="8">0</span></div>
-        <span class="hs-l">Projects</span>
-      </div>
-      <span class="hs-div" aria-hidden="true"></span>
-      <div class="hs">
-        <div class="hs-top"><span class="hs-n" data-count="15">0</span><span class="hs-sym">+</span></div>
-        <span class="hs-l">Platforms</span>
-      </div>
-    </div>
 
-    <div class="hero-actions js-reveal" style="--d:0.2s">
-      <a href="#projects" class="btn-primary">View Projects</a>
-      <a href="#contact" class="btn-ghost">Get in Touch</a>
+      <div class="hero-heading-row js-reveal" style="--d:0.05s">
+        <figure class="hero-avatar">
+          <div class="hero-avatar-frame">
+            <img
+              src="assets/images/sumit-bansal-portrait.jpg"
+              alt="Portrait of Sumit Bansal"
+              class="hero-avatar-image"
+            />
+          </div>
+        </figure>
+
+        <h1 class="hero-name">
+          <span class="name-line" data-text="Sumit Bansal">Sumit Bansal</span>
+        </h1>
+      </div>
+
+      <p class="hero-sub js-reveal" style="--d:0.1s">
+        12+ years building systems that connect, automate, and scale —<br>
+        API integrations, AI workflows, e-commerce operations.
+      </p>
+
+      <div class="hero-stats js-reveal" style="--d:0.15s">
+        <div class="hs">
+          <div class="hs-top"><span class="hs-n" data-count="12">0</span><span class="hs-sym">+</span></div>
+          <span class="hs-l">Years</span>
+        </div>
+        <span class="hs-div" aria-hidden="true"></span>
+        <div class="hs">
+          <div class="hs-top"><span class="hs-n" data-count="8">0</span></div>
+          <span class="hs-l">Projects</span>
+        </div>
+        <span class="hs-div" aria-hidden="true"></span>
+        <div class="hs">
+          <div class="hs-top"><span class="hs-n" data-count="15">0</span><span class="hs-sym">+</span></div>
+          <span class="hs-l">Platforms</span>
+        </div>
+      </div>
+
+      <div class="hero-actions js-reveal" style="--d:0.2s">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
     </div>
   </div>
 
@@ -296,12 +310,36 @@
         </div>
         <div class="proj-foot">
           <div class="proj-stack"><span>OpenAI API</span><span>Node.js</span><span>Express</span><span>JavaScript</span><span>HTML/CSS</span></div>
-          <a href="https://github.com/Sumitbansal96/careerready-ai" class="proj-link" target="_blank" rel="noopener">Project ↗</a>
+          <div class="proj-links">
+            <a href="https://sumitbansal96.github.io/careerready-ai/" class="proj-link" target="_blank" rel="noopener">Live ↗</a>
+            <a href="https://github.com/Sumitbansal96/careerready-ai" class="proj-link" target="_blank" rel="noopener">Repo ↗</a>
+          </div>
         </div>
       </article>
 
       <article class="proj-card js-proj" style="--pi:1">
         <div class="proj-num">02</div>
+        <div class="proj-body">
+          <div class="proj-type">Personal AI Tool</div>
+          <h3 class="proj-title">Personal AI Chat</h3>
+          <p class="proj-desc">Built a private single-file ChatGPT frontend that runs on GitHub Pages while keeping the OpenAI API key runtime-only in the browser session. The app adds a lightweight password gate and avoids local storage, cookies, and session persistence.</p>
+          <div class="proj-reveal">
+            <div class="pr-row"><span class="pr-k">Problem</span><span class="pr-v">Create a fast personal AI chat interface without hardcoding or persistently storing sensitive keys</span></div>
+            <div class="pr-row"><span class="pr-k">Approach</span><span class="pr-v">Single-page HTML, CSS, and JavaScript app with runtime API-key entry, app-password gating, and session-only memory</span></div>
+            <div class="pr-row"><span class="pr-k">Result</span><span class="pr-v">Shipped a lightweight personal AI interface with stronger client-side privacy boundaries for everyday use</span></div>
+          </div>
+        </div>
+        <div class="proj-foot">
+          <div class="proj-stack"><span>OpenAI API</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span></div>
+          <div class="proj-links">
+            <a href="https://sumitbansal96.github.io/personal-ai-chat/" class="proj-link" target="_blank" rel="noopener">Live ↗</a>
+            <a href="https://github.com/Sumitbansal96/personal-ai-chat" class="proj-link" target="_blank" rel="noopener">Repo ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj-card js-proj" style="--pi:2">
+        <div class="proj-num">03</div>
         <div class="proj-body">
           <div class="proj-type">CRM Middleware Demo</div>
           <h3 class="proj-title">CRM Sync Dashboard</h3>
@@ -314,12 +352,15 @@
         </div>
         <div class="proj-foot">
           <div class="proj-stack"><span>Zoho CRM</span><span>HubSpot</span><span>JavaScript</span><span>Chart.js</span><span>HTML/CSS</span></div>
-          <a href="https://github.com/Sumitbansal96/crm-sync-dashboard" class="proj-link" target="_blank" rel="noopener">Project ↗</a>
+          <div class="proj-links">
+            <a href="https://sumitbansal96.github.io/crm-sync-dashboard/" class="proj-link" target="_blank" rel="noopener">Live ↗</a>
+            <a href="https://github.com/Sumitbansal96/crm-sync-dashboard" class="proj-link" target="_blank" rel="noopener">Repo ↗</a>
+          </div>
         </div>
       </article>
 
-      <article class="proj-card js-proj" style="--pi:2">
-        <div class="proj-num">03</div>
+      <article class="proj-card js-proj" style="--pi:3">
+        <div class="proj-num">04</div>
         <div class="proj-body">
           <div class="proj-type">AI Automation</div>
           <h3 class="proj-title">AI-Driven Chatbot Integration</h3>
@@ -336,8 +377,8 @@
         </div>
       </article>
 
-      <article class="proj-card js-proj" style="--pi:3">
-        <div class="proj-num">04</div>
+      <article class="proj-card js-proj" style="--pi:4">
+        <div class="proj-num">05</div>
         <div class="proj-body">
           <div class="proj-type">CRM Automation</div>
           <h3 class="proj-title">Automated Lead Management</h3>
@@ -352,8 +393,8 @@
         </div>
       </article>
 
-      <article class="proj-card js-proj" style="--pi:4">
-        <div class="proj-num">05</div>
+      <article class="proj-card js-proj" style="--pi:5">
+        <div class="proj-num">06</div>
         <div class="proj-body">
           <div class="proj-type">Data Engineering</div>
           <h3 class="proj-title">Cross-Platform Data Sync</h3>
@@ -368,8 +409,8 @@
         </div>
       </article>
 
-      <article class="proj-card js-proj" style="--pi:5">
-        <div class="proj-num">06</div>
+      <article class="proj-card js-proj" style="--pi:6">
+        <div class="proj-num">07</div>
         <div class="proj-body">
           <div class="proj-type">No-Code Platform</div>
           <h3 class="proj-title">No-Code Integration Portal</h3>
@@ -384,8 +425,8 @@
         </div>
       </article>
 
-      <article class="proj-card js-proj" style="--pi:6">
-        <div class="proj-num">07</div>
+      <article class="proj-card js-proj" style="--pi:7">
+        <div class="proj-num">08</div>
         <div class="proj-body">
           <div class="proj-type">Operations Automation</div>
           <h3 class="proj-title">E-commerce Automation Scripts</h3>
@@ -400,8 +441,8 @@
         </div>
       </article>
 
-      <article class="proj-card js-proj" style="--pi:7">
-        <div class="proj-num">08</div>
+      <article class="proj-card js-proj" style="--pi:8">
+        <div class="proj-num">09</div>
         <div class="proj-body">
           <div class="proj-type">macOS Utility App</div>
           <h3 class="proj-title">Versatile File Converter</h3>
@@ -539,7 +580,7 @@
   <div class="wrap">
     <div class="sec-label js-reveal">06 — Contact</div>
     <h2 class="sec-title js-reveal" style="--d:0.05s">Let's build<br>something together.</h2>
-    <p class="contact-sub js-reveal" style="--d:0.1s">Open to automation engineering roles, integration consulting, and technical collaborations. Based in Noida — available remote and hybrid.</p>
+    <p class="contact-sub js-reveal" style="--d:0.1s">Open to automation engineering roles, integration consulting, and technical collaborations. Based in New Delhi — available remote and hybrid.</p>
 
     <div class="contact-grid js-reveal" style="--d:0.15s">
       <a href="mailto:sumit.mft@gmail.com" class="cc">
