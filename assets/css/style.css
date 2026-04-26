@@ -199,6 +199,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.05; text-wrap:
   background: var(--accent);
   color: var(--bg);
   border-radius: var(--r-md);
+  white-space: nowrap;
   transition: background 0.2s, transform 0.2s;
 }
 .nav-cta:hover { background: var(--accent-d); transform: translateY(-1px); }
